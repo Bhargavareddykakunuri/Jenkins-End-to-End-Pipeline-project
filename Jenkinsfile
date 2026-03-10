@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Artifact') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn clean package'
             }
         }
 
