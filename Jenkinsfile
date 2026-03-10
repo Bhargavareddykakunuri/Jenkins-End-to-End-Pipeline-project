@@ -28,7 +28,7 @@ pipeline {
                 sh 'docker stop employee-container || true'
                 sh 'docker rm employee-container || true'
                 // Run new container
-                sh 'docker run -d --name employee-container -p 8080:8080 employee-app:latest'
+                sh 'docker run -d --name employee-container -p 1111:1111 employee-app:latest'
             }
         }
     }
