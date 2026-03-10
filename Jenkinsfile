@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Code') {
             steps {
-                git branch: ' main', url: "https://github.com/Bhargavareddykakunuri/Jenkins-End-to-End-Pipeline-project.git"
+                git "https://github.com/Bhargavareddykakunuri/Jenkins-End-to-End-Pipeline-project.git"
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Deploy Container') {
             steps {
-                // Stop old container if exists
+                // Stop old container if it exists
                 sh 'docker stop employee-container || true'
                 sh 'docker rm employee-container || true'
                 // Run new container
