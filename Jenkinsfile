@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Code') {
             steps {
-                git "https://github.com/Bhargavareddykakunuri/Jenkins-End-to-End-Pipeline-project.git"
+                git clone "https://github.com/Bhargavareddykakunuri/Jenkins-End-to-End-Pipeline-project.git"
             }
         }
 
